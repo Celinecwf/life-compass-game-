@@ -361,26 +361,181 @@
             background-color: #c0392b;
             border: 2px solid #e74c3c;
         }
+
+        /* 行銷推廣區塊 (已移除，但保留樣式以防未來使用) */
+        .promotion-block {
+            background-color: rgba(65, 105, 225, 0.2); /* 較淺的藍色半透明 */
+            border: 1px solid #4169E1;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(65, 105, 225, 0.4);
+            cursor: pointer; /* 顯示為可點擊 */
+            transition: transform 0.2s ease;
+        }
+
+        .promotion-block:hover {
+            transform: translateY(-5px);
+        }
+
+        .promotion-block h3 {
+            color: #87CEFA; /* 天藍色 */
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px rgba(135, 206, 250, 0.5);
+        }
+
+        .promotion-block p {
+            color: #e0e0e0;
+            font-size: 1.05em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .promotion-block img.qr-code {
+            width: 120px; /* QR Code 尺寸 */
+            height: 120px;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .promotion-block .cta-button {
+            background: linear-gradient(90deg, #FF69B4, #FFB6C1); /* 粉色系按鈕 */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .promotion-block .cta-button:hover {
+            background: linear-gradient(90deg, #FF1493, #FF69B4);
+            transform: translateY(-2px);
+        }
+
+        /* 排行榜數據顯示 */
+        .leaderboard-data {
+            background-color: rgba(44, 62, 80, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+            border: 1px solid rgba(52, 73, 94, 0.5);
+        }
+        .leaderboard-data div {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #e2e8f0;
+        }
+        .leaderboard-data strong {
+            color: #f1c40f;
+        }
+        .social-share-button {
+            background: linear-gradient(90deg, #00C6FF, #0072FF); /* 藍色漸變 */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 15px 10px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .social-share-button:hover {
+            background: linear-gradient(90deg, #00B0E0, #0056B3);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+        .copy-message {
+            color: #2ecc71;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* 新增地圖階段顯示 */
+        #map-stage-display {
+            background-color: rgba(52, 73, 94, 0.7);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: #6EE7B7;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(110, 231, 183, 0.3);
+        }
+
+        /* 星座幸運祝福卡樣式 */
+        #zodiac-blessing-card {
+            margin-top: 25px;
+            padding: 20px;
+            background: linear-gradient(45deg, #FFD700, #FFA500); /* 金色漸變 */
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* 金色光暈 */
+            color: #0F1E2A; /* 深藍色文字，在亮色背景上保持可讀性 */
+            font-size: 1.5em; /* 更大字體 */
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* 輕微文字陰影 */
+        }
+        #zodiac-blessing-card h3 {
+            color: #1A4B4C; /* 深綠色，與金色搭配 */
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-shadow: none; /* 移除發光，保持清晰 */
+        }
+        /* 新增的祝福名稱高亮樣式 */
+        .blessing-name-highlight {
+            color: #0A1B1C; /* 顯眼黑色 */
+            font-size: 1.2em; /* 保持原有的字體大小放大效果 */
+            text-shadow: none; /* 移除光暈效果，確保黑色清晰 */
+        }
+
+        /* 摩羯座圖片樣式 */
+        /* #capricorn-blessing-image img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        } */
+        /* 新增所有星座圖片容器的共同樣式 */
+        .zodiac-image-container img {
+            max-width: 150px; /* 圖片最大寬度 */
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
     <div class="game-container" id="game-container">
         <h1 id="game-title">【生命羅盤：星軌守護】</h1>
 
+        <!-- 1. 開始畫面 -->
         <div id="start-screen">
+            <!-- 國泰人壽 Logo 已從封面移除 -->
             <p>歡迎來到《生命羅盤：星軌守護》！在這裡，您將扮演一位人生角色，體驗面對各種風險與挑戰的旅程。您的選擇，特別是是否擁有保險，將深刻影響您的命運。</p>
             <p style="color: #6EE7B7; font-weight: bold;">國泰人壽：您的人生最佳夥伴，從啟程開始守護。</p>
             <button class="start-button" id="startButton">啟動羅盤</button>
         </div>
 
+        <!-- 2. 角色選擇畫面 (改為星座選擇) -->
         <div id="character-selection" class="hidden">
             <h2>選擇您的星座</h2>
             <p>您的星座將揭示您的人生特質，並決定您在遊戲中的初始角色。</p>
             <div class="options-container" id="zodiac-buttons-container">
                 </div>
             <p id="role-description" style="margin-top: 20px; color: #bdc3c7;"></p>
+            <p id="zodiac-blessing-description" style="margin-top: 10px; color: #f1c40f; font-weight: bold;"></p>
         </div>
 
+        <!-- 3. 保險購買畫面 -->
         <div id="insurance-purchase" class="hidden">
             <h2>序章：人生啟航 - 投保環節</h2>
             <p>您有 <span id="current-assets-purchase" class="status-item"></span> 初始資產。請選擇您想購買的保險契約卡，為您的生命旅程增添保障。保費會從您的資產中扣除。</p>
@@ -392,12 +547,14 @@
              <p class="message hidden" id="purchase-message"></p>
         </div>
 
+        <!-- 4. 遊戲主畫面 (結合問答與事件) -->
         <div id="game-play" class="hidden">
             <div class="status-bar">
                 <div class="status-item">資產: <span id="display-assets">$</span></div>
                 <div class="status-item">健康: <span id="display-health"></span>/100</div>
                 <div class="status-item">回合: <span id="display-round"></span>/<span id="total-rounds"></span></div>
             </div>
+            <div id="map-stage-display"></div> <!-- 新增地圖階段顯示 -->
             <div class="insurance-list" id="owned-insurances">
                 <h3>我的保險契約:</h3>
                 <p id="no-insurance-yet" style="color: #95a5a6;">目前沒有購買任何保險契約。</p>
@@ -426,18 +583,31 @@
             </div>
         </div>
 
+        <!-- 5. 人生轉折點加購保險畫面 (新增人生挑戰模擬器功能) -->
         <div id="turning-point-purchase" class="hidden">
             <h2>人生轉折點：重新規劃保障</h2>
             <p>您已走過人生旅程的初期，現在是檢視您的保障並做出調整的時刻。您當前擁有 <span id="turning-point-assets" class="status-item"></span> 資產。是否需要加購保險，以應對未來的挑戰？</p>
             <div class="insurance-list" id="turning-point-insurances">
                 </div>
             <div class="options-container">
-                <button id="confirm-turning-point-purchase">確認加購，繼續旅程</button>
+                <button id="confirm-turning-point-purchase" disabled>確認加購，繼續旅程</button>
             </div>
              <p class="message hidden" id="turning-point-message"></p>
+
+            <div id="life-challenge-simulator" style="margin-top: 30px; padding: 20px; background-color: rgba(65, 105, 225, 0.2); border-radius: 10px; border: 1px solid #4169E1; box-shadow: 0 0 15px rgba(65, 105, 225, 0.4);">
+                <h3>【人生挑戰模擬器】</h3>
+                <p>您的人生來到一個十字路口，擺在眼前的是【留學深造】、【自主創業】、【步入婚姻】三條道路，您會選擇哪一個？您的選擇將影響未來的旅程挑戰！</p>
+                <div class="options-container">
+                    <button id="choose-study" data-challenge="study">選擇：留學深造</button>
+                    <button id="choose-business" data-challenge="business">選擇：自主創業</button>
+                    <button id="choose-marriage" data-challenge="marriage">選擇：步入婚姻</button>
+                </div>
+                <p id="challenge-outcome-message" class="message hidden" style="margin-top: 15px;"></p>
+            </div>
         </div>
 
 
+        <!-- 6. 遊戲結束畫面 -->
         <div id="end-game" class="hidden">
             <h2>【人生終章：羅盤歸位】</h2>
             <p id="final-outcome-text"></p>
@@ -446,6 +616,40 @@
                 <div class="status-item">最終健康: <span id="final-health"></span>/100</div>
             </div>
             <p class="message result-message positive" id="beat-percentage-message"></p>
+            <div class="leaderboard-data">
+                <h3>您的最終成就：</h3>
+                <div id="final-risk-judgment">風險判斷力指數: <strong></strong></div>
+                <div id="final-protection-completion">保障完成度: <strong></strong></div>
+                <div id="final-lucky-escapes">幸運逃脫次數: <strong></strong></div>
+                <div id="final-achievement-title">成就稱號: <strong></strong></div>
+                <div id="final-zodiac-blessing-summary">您的本命星祝福: <strong></strong></div>
+            </div>
+            <div id="zodiac-blessing-card">
+                <h3>您的專屬【星軌守護祝福卡】</h3>
+                <p id="blessing-card-text"></p>
+                <!-- 放置所有星座圖片的容器 -->
+                <div id="zodiac-blessing-images-container">
+                    <img id="aries-image" class="zodiac-image-container hidden" src="" alt="牡羊座圖片">
+                    <img id="taurus-image" class="zodiac-image-container hidden" src="" alt="金牛座圖片">
+                    <img id="gemini-image" class="zodiac-image-container hidden" src="" alt="雙子座圖片">
+                    <img id="cancer-image" class="zodiac-image-container hidden" src="" alt="巨蟹座圖片">
+                    <img id="leo-image" class="zodiac-image-container hidden" src="" alt="獅子座圖片">
+                    <img id="virgo-image" class="zodiac-image-container hidden" src="" alt="處女座圖片">
+                    <img id="libra-image" class="zodiac-image-container hidden" src="" alt="天秤座圖片">
+                    <img id="scorpio-image" class="zodiac-image-container hidden" src="" alt="天蠍座圖片">
+                    <img id="sagittarius-image" class="zodiac-image-container hidden" src="" alt="射手座圖片">
+                    <img id="capricorn-image" class="zodiac-image-container hidden" src="" alt="摩羯座圖片">
+                    <img id="aquarius-image" class="zodiac-image-container hidden" src="" alt="水瓶座圖片">
+                    <img id="pisces-image" class="zodiac-image-container hidden" src="" alt="雙魚座圖片">
+                </div>
+            </div>
+            <div id="leaderboard-section">
+                <h3 style="color: #6EE7B7;">【生命羅盤成就榜】</h3>
+                <p style="color: #e2e8f0; font-size: 0.9em;">您的使用者ID: <span id="display-user-id" style="font-weight: bold; color: #f1c40f; word-break: break-all;"></span></p>
+                <ul id="leaderboard-list">
+                    </ul>
+            </div>
+
             <div class="insurance-list">
                 <h3>您擁有的保險契約:</h3>
                 <ul id="final-owned-insurances-list"></ul>
@@ -456,9 +660,11 @@
             </div>
             <div id="cathay-recommendation" style="margin-top: 30px; padding: 20px; background-color: rgba(44, 62, 80, 0.7); border-radius: 10px; border: 1px solid #34D399;">
                 <h3 style="color: #6EE7B7;">國泰人壽 推薦產品：</h3>
-                <p id="recommended-products-text" style="color: #e2e8f0;"></p>
+                <p style="color: #e2e8f0;" id="recommended-products-text"></p>
                 <p style="color: #34D399; font-weight: bold; font-size: 1.1em;">國泰人壽：守護您的現在，成就您的未來。</p>
             </div>
+            <button class="social-share-button" id="shareResultButton">分享我的生命羅盤成就</button>
+            <p id="copy-message" class="copy-message hidden">成就文字已複製到剪貼簿！</p>
             <button class="start-button" id="restartGameButton">重新啟動羅盤 (再玩一次)</button>
         </div>
 
@@ -466,14 +672,51 @@
             <div class="rebirth-content">
                 <h2>【危急時刻：獲得新生！】</h2>
                 <p>您的資產或健康已達極限，生命羅盤即將停擺！</p>
-                <img src="https://placehold.co/150x50/007bff/ffffff?text=Cathay+Life+Logo" alt="Cathay Life Logo" class="cathay-logo">
+                <img src="https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/國泰logo.jpg" alt="Cathay Life Logo" class="cathay-logo">
                 <p>國泰人壽在此為您提供一次「時光倒流」的機會，讓您重獲新生，繼續未完的旅程！</p>
                 <button class="rebirth-button" id="activateRebirth">獲得新生 / 時光倒流</button>
             </div>
         </div>
     </div>
 
-    <script>
+    <script type="module">
+        // Firebase imports
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, query, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Global Firebase variables (provided by Canvas environment)
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        let app;
+        let db;
+        let auth;
+        let userId; // To store the authenticated user ID
+
+        async function setupFirebase() {
+            if (!app) { // Initialize only once
+                app = initializeApp(firebaseConfig);
+                db = getFirestore(app);
+                auth = getAuth(app);
+
+                // Authenticate user
+                try {
+                    if (initialAuthToken) {
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+                    userId = auth.currentUser?.uid || crypto.randomUUID(); // Get UID or generate random for anonymous
+                    console.log("Firebase initialized. User ID:", userId);
+                } catch (error) {
+                    console.error("Firebase authentication failed:", error);
+                    userId = crypto.randomUUID(); // Fallback to random ID if auth fails
+                }
+            }
+        }
+
         // --- 遊戲數據 ---
         // 玩家角色設定
         const initialStates = {
@@ -485,20 +728,20 @@
             empathic_connector: { id: "empathic_connector", name: "情感共鳴者", desc: "敏感、富有同情心、追求心靈連結，關懷他人。", assets: 95000, health: 92 }
         };
 
-        // 星座與角色映射 (包含月份日期區間)
+        // 星座與角色映射 (包含月份日期區間、本命星祝福和圖片 URL)
         const zodiacToRoleMap = {
-            "aries": { name: "牡羊座", dates: "3/21-4/19", role: initialStates.ambitious_pioneer, desc: "熱情衝動，勇於冒險，行動力強。" },
-            "taurus": { name: "金牛座", dates: "4/20-5/20", role: initialStates.steady_guardian, desc: "務實穩健，重視物質安全與累積。" },
-            "gemini": { name: "雙子座", dates: "5/21-6/20", role: initialStates.harmonious_co_creator, desc: "聰明多變，好奇心強，適應力好。" },
-            "cancer": { name: "巨蟹座", dates: "6/21-7/22", role: initialStates.steady_guardian, desc: "情感豐富，戀家顧家，重視安全感。" },
-            "leo": { name: "獅子座", dates: "7/23-8/22", role: initialStates.ambitious_pioneer, desc: "自信大方，熱愛生活，樂於展現自我。" },
-            "virgo": { name: "處女座", dates: "8/23-9/22", role: initialStates.wise_planner, desc: "細心謹慎，追求完美，善於分析和規劃。" },
-            "libra": { name: "天秤座", dates: "9/23-10/22", role: initialStates.harmonious_co_creator, desc: "追求和諧與平衡，善於溝通。" },
-            "scorpio": { name: "天蠍座", dates: "10/23-11/21", role: initialStates.empathic_connector, desc: "洞察力強，直覺敏銳，重視掌控與深度。" },
-            "sagittarius": { name: "射手座", dates: "11/22-12/21", role: initialStates.free_explorer, desc: "樂觀開朗，熱愛自由與探索，喜歡旅行。" },
-            "capricorn": { name: "摩羯座", dates: "12/22-1/19", role: initialStates.wise_planner, desc: "有責任感，務實謹慎，目標明確，擅長長期規劃。" },
-            "aquarius": { name: "水瓶座", dates: "1/20-2/18", role: initialStates.free_explorer, desc: "獨立創新，思維獨特，重視自由與群體利益。" },
-            "pisces": { name: "雙魚座", dates: "2/19-3/20", role: initialStates.empathic_connector, desc: "敏感浪漫，富有同情心，直覺力強。" }
+            "aries": { name: "牡羊座", dates: "3/21-4/19", role: initialStates.ambitious_pioneer, desc: "熱情衝動，勇於冒險，行動力強。", blessing: { name: "勇者之財", type: "asset_per_round", value: 1500, desc: "每回合額外獲得少量資產。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/牡羊座_星座守護卡.jpg" },
+            "taurus": { name: "金牛座", dates: "4/20-5/20", role: initialStates.steady_guardian, desc: "務實穩健，重視物質安全與累積。", blessing: { name: "豐饒之體", type: "health_per_round", value: 3, desc: "每回合額外恢復少量健康。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/金牛座_星座守護卡.jpg" },
+            "gemini": { name: "雙子座", dates: "5/21-6/20", role: initialStates.harmonious_co_creator, desc: "聰明多變，好奇心強，適應力好。", blessing: { name: "智慧之語", type: "clue_chance", value: 0.2, desc: "更容易發現守護者線索，線索事件機率提升20%。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/雙子座_星座守護卡.jpg" },
+            "cancer": { name: "巨蟹座", dates: "6/21-7/22", role: initialStates.steady_guardian, desc: "情感豐富，戀家顧家，重視安全感。", blessing: { name: "家庭之盾", type: "health_per_round", value: 4, desc: "家庭相關風險對健康影響較小，每回合額外恢復健康。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/巨蟹座_星座守護卡.jpg" },
+            "leo": { name: "獅子座", dates: "7/23-8/22", role: initialStates.ambitious_pioneer, desc: "自信大方，熱愛生活，樂於展現自我。", blessing: { name: "榮耀之光", type: "asset_per_round", value: 2000, desc: "事業發展更順遂，每回合額外獲得較多資產。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/獅子座_星座守護卡.jpg" },
+            "virgo": { name: "處女座", dates: "8/23-9/22", role: initialStates.wise_planner, desc: "細心謹慎，追求完美，善於分析和規劃。", blessing: { name: "分析之眼", type: "quiz_bonus_asset", value: 2000, desc: "答對保險題時獲得更多資產獎勵。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/處女座_星座守護卡.jpg" },
+            "libra": { name: "天秤座", dates: "9/23-10/22", role: initialStates.harmonious_co_creator, desc: "追求和諧與平衡，善於溝通。", blessing: { name: "和諧之境", type: "health_per_round", value: 3, desc: "人際關係帶來健康增益，每回合額外恢復健康。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/天秤座_星座守護卡.jpg" },
+            "scorpio": { name: "天蠍座", dates: "10/23-11/21", role: initialStates.empathic_connector, desc: "洞察力強，直覺敏銳，重視掌控與深度。", blessing: { name: "深邃之韌", type: "risk_mitigation_percent", value: 0.05, desc: "在風險事件中，損失稍微減輕5%。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/天蠍座_星座守護卡.jpg" },
+            "sagittarius": { name: "射手座", dates: "11/22-12/21", role: initialStates.free_explorer, desc: "樂觀開朗，熱愛自由與探索，喜歡旅行。", blessing: { name: "冒險之運", type: "asset_per_round", value: 1800, desc: "探索帶來意外之財，每回合額外獲得少量資產。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/射手座_星座守護卡.jpg" },
+            "capricorn": { name: "摩羯座", dates: "12/22-1/19", role: initialStates.wise_planner, desc: "有責任感，務實謹慎，目標明確，擅長長期規劃。", blessing: { name: "堅實之基", type: "protection_score_boost", value: 0.1, desc: "保險保障效果更佳，最終保障完成度分數更高。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/摩羯座_星座守護卡.jpg" },
+            "aquarius": { name: "水瓶座", dates: "1/20-2/18", role: initialStates.free_explorer, desc: "獨立創新，思維獨特，重視自由與群體利益。", blessing: { name: "創新之庇", type: "lucky_escape_boost_count", value: 1, desc: "更容易從困境中幸運逃脫一次(最終計分+1)。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/水瓶座_星座守護卡.jpg" },
+            "pisces": { name: "雙魚座", dates: "2/19-3/20", role: initialStates.empathic_connector, desc: "敏感浪漫，富有同情心，直覺力強。", blessing: { name: "療癒之泉", type: "health_per_round", value: 5, desc: "心靈平靜帶來健康，每回合額外恢復較多健康。" }, imageUrl: "https://raw.githubusercontent.com/Celinecwf/Life_compass_game/main/images/雙魚座_星座守護卡.jpg" }
         };
 
         // 可購買的保險種類
@@ -518,43 +761,74 @@
                 name: "突發性大病", desc: "您突然感到身體不適，被診斷出需要長期治療的大病。龐大的醫療費用和收入中斷讓您備感壓力...",
                 trigger: ["medical", "critical_illness"], // 醫療險 或 重大疾病險
                 no_insurance: { assets: -80000, health: -30, msg: "您沒有相關保險！積蓄快速耗盡，健康狀況急速惡化。" },
-                with_insurance: { assets: +50000, health: +10, msg: "慶幸您有醫療險/重大疾病險！保險理賠金大幅減輕您的負擔，讓您能專心養病。", class: "positive" }
+                with_insurance: { assets: +50000, health: +10, msg: "慶幸您有醫療險/重大疾病險！保險理賠金大幅減輕您的負擔，讓您能專心養病。", class: "positive" },
+                tags: ["health", "family"]
             },
             {
                 name: "嚴重意外事故", desc: "一場突如其來的嚴重事故導致您受傷，需要住院與復健。這筆開銷與收入中斷是個沉重打擊...",
                 trigger: ["accident", "medical"], // 意外險 或 醫療險
                 no_insurance: { assets: -60000, health: -25, msg: "您沒有意外險！醫療費與休養期間的收入損失讓您陷入困境。" },
-                with_insurance: { assets: +40000, health: +15, msg: "幸好您有意外險/醫療險！保險金即時給付，助您渡過難關，專心康復。", class: "positive" }
+                with_insurance: { assets: +40000, health: +15, msg: "幸好您有意外險/醫療險！保險金即時給付，助您渡過難關，專心康復。", class: "positive" },
+                tags: ["accident", "career"]
             },
             {
                 name: "投資失利", desc: "您投入大筆資金的投資案不幸失敗，資金遭到凍結，面臨嚴重的財務危機。",
                 trigger: ["savings"], // 儲蓄險 (作為備用金/資產保護)
                 no_insurance: { assets: -70000, health: -10, msg: "您的投資全數虧損，財務拉警報，心情也受到影響。" },
-                with_insurance: { assets: +20000, health: +5, msg: "雖然投資失利，但您有儲蓄險的保單價值，為您提供了緩衝資金，減輕部分壓力。", class: "positive" }
+                with_insurance: { assets: +20000, health: +5, msg: "雖然投資失利，但您有儲蓄險的保單價值，為您提供了緩衝資金，減輕部分壓力。", class: "positive" },
+                tags: ["finance", "career"]
             },
             {
                 name: "海外突發狀況", desc: "您在海外旅行時遭遇緊急醫療狀況，或行李遺失、行程取消等，面臨高額海外費用。",
                 trigger: ["travel"], // 旅遊平安險
                 no_insurance: { assets: -30000, health: -15, msg: "海外狀況讓您措手不及！高額費用和不便讓您的旅程變成噩夢。" },
-                with_insurance: { assets: +15000, health: +5, msg: "幸好您有旅遊平安險！保險公司承擔了大部分費用，讓您在異地也能安心應對。", class: "positive" }
+                with_insurance: { assets: +15000, health: +5, msg: "幸好您有旅遊平安險！保險公司承擔了大部分費用，讓您在異地也能安心應對。", class: "positive" },
+                tags: ["travel", "health"]
             },
             {
                 name: "家庭經濟支柱驟逝", desc: "家庭經濟支柱突然身故，家庭收入中斷，子女教育和生活面臨巨大挑戰。",
                 trigger: ["life"], // 壽險
                 no_insurance: { assets: -100000, health: -20, msg: "家庭失去經濟支柱，未來的生活、子女的教育金面臨巨大缺口，讓家人陷入困境。" },
-                with_insurance: { assets: +80000, health: +10, msg: "您生前有壽險保障！保險金的給付為家人提供了應急資金和未來的保障，讓他們能繼續前行。", class: "positive" }
+                with_insurance: { assets: +80000, health: +10, msg: "您生前有壽險保障！保險金的給付為家人提供了應急資金和未來的保障，讓他們能繼續前行。", class: "positive" },
+                tags: ["family", "life"]
             },
             {
                 name: "全球經濟衰退", desc: "一場全球性的經濟衰退來襲，您的產業受到嚴重衝擊，收入銳減，甚至面臨失業風險。",
                 trigger: ["savings"], // 儲蓄險 (作為抗風險的穩定資產)
                 no_insurance: { assets: -50000, health: -10, msg: "經濟寒冬讓您的財務雪上加霜，生活陷入困境。" },
-                with_insurance: { assets: +10000, health: 0, msg: "幸好您有儲蓄險，這筆穩健的資產在此時提供了部分現金流，幫助您度過難關。", class: "positive" }
+                with_insurance: { assets: +10000, health: 0, msg: "幸好您有儲蓄險，這筆穩健的資產在此時提供了部分現金流，幫助您度過難關。", class: "positive" },
+                tags: ["finance", "career"]
             },
             {
                 name: "晚年失能", desc: "您在晚年因意外或疾病導致身體失能，需要長期專業照護。這筆龐大的照護費用和人力需求，對您的家庭造成了沉重負擔...",
                 trigger: ["long_term_care"], // 長期照護險
                 no_insurance: { assets: -120000, health: -35, msg: "您沒有長期照護險！高昂的照護費用迅速耗盡積蓄，生活品質嚴重下降，甚至影響家人。" },
-                with_insurance: { assets: +60000, health: +10, msg: "幸好您有長期照護險！保險公司每月給付照護金，讓您能安心聘請專業看護，維持晚年生活品質。", class: "positive" }
+                with_insurance: { assets: +60000, health: +10, msg: "幸好您有長期照護險！保險公司每月給付照護金，讓您能安心聘請專業看護，維持晚年生活品質。", class: "positive" },
+                tags: ["health", "family"]
+            },
+            {
+                name: "學業/進修壓力", desc: "您選擇深造後，學業壓力劇增，導致健康下降，同時也需要額外資金支持學費和生活費。",
+                trigger: ["savings", "medical"], // 儲蓄險 (備用金) 或 醫療險 (健康問題)
+                no_insurance: { assets: -40000, health: -20, msg: "龐大的學費和生活開銷讓您捉襟見肘，健康也亮起紅燈。" },
+                with_insurance: { assets: +15000, health: +5, msg: "幸好有儲蓄險支持學業，醫療險則為健康問題提供了保障，壓力大減。", class: "positive" },
+                tags: ["study", "finance", "health"],
+                only_if_challenge: "study" // 只有在選擇「留學深造」後才會增加機率
+            },
+            {
+                name: "創業初期資金斷裂", desc: "您的創業專案在初期面臨資金鏈斷裂，需要緊急注入資金才能繼續營運。",
+                trigger: ["savings"], // 儲蓄險 (應急資金)
+                no_insurance: { assets: -90000, health: -25, msg: "創業夢想戛然而止，資金耗盡讓您陷入絕境。" },
+                with_insurance: { assets: +30000, health: +10, msg: "幸好有儲蓄險這筆應急資金！它幫助您度過難關，讓創業之路得以延續。", class: "positive" },
+                tags: ["business", "finance"],
+                only_if_challenge: "business"
+            },
+            {
+                name: "家庭緊急開銷", desc: "新婚後，家庭突發緊急事件（例如新居裝修費用、親人意外醫療），需要一筆意外的支出。",
+                trigger: ["savings", "medical"], // 儲蓄險 (應急金) 或 醫療險
+                no_insurance: { assets: -50000, health: -15, msg: "突如其來的家庭開銷讓您手忙腳亂，影響了新婚生活。" },
+                with_insurance: { assets: +20000, health: +5, msg: "有了儲蓄險或醫療險，這些意外支出得到有效緩解，讓您能更從容應對。", class: "positive" },
+                tags: ["marriage", "finance", "family"],
+                only_if_challenge: "marriage"
             }
         ];
 
@@ -573,10 +847,13 @@
             { name: "學習新技能", desc: "您投入時間學習了新技能，這讓您感到充實和自信。", assets: 0, health: +10 },
             { name: "結交新朋友", desc: "您認識了新朋友，拓展了人際圈，感到心情愉悅。", assets: 0, health: +5 },
             { name: "小額中獎", desc: "您購買的彩票意外中得了小獎！", assets: +5000, health: 0 },
-            { name: "健康生活習慣", desc: "您堅持運動和健康飲食，身體狀況良好。", assets: 0, health: +8 }
+            { name: "健康生活習慣", desc: "您堅持運動和健康飲食，身體狀況良好。", assets: 0, health: +8 },
+            { name: "找到打工機會", desc: "留學期間找到一份兼職，減輕了部分經濟壓力。", assets: +8000, health: +2, only_if_challenge: "study" },
+            { name: "產品獲得好評", desc: "您創業的產品獲得市場初步好評，帶來了第一筆收入。", assets: +10000, health: +5, only_if_challenge: "business" },
+            { name: "伴侶送出驚喜", desc: "您的伴侶為您準備了小驚喜，讓您心情大好，幸福感滿滿。", assets: 0, health: +5, only_if_challenge: "marriage" }
         ];
 
-        // 12 題保險情境選擇題
+        // 10 題保險情境選擇題 (已縮短至10題)
         const quizQuestions = [
             {
                 id: "q1", question: "您剛步入職場，手頭預算有限，但想為自己規劃一份基礎保障。您會優先考慮哪種保險？",
@@ -623,7 +900,7 @@
                     { text: "D. 儲蓄險，短期儲蓄目標", correct: false }
                 ]
             },
-            {
+            { // 第6題 (索引5)
                 id: "q6", question: "您被診斷出罹患了需要長期且高額治療的重大疾病，例如癌症。哪種保險能提供一次性的大筆理賠金，讓您能專心治療？",
                 options: [
                     { text: "A. 醫療險，按實際醫療費用給付", correct: false },
@@ -632,7 +909,7 @@
                     { text: "D. 壽險，身故才給付", correct: false }
                 ]
             },
-            {
+            { // 第7題 (索引6)
                 id: "q7", question: "您的孩子剛出生，您希望為他準備一筆未來讀大學的教育基金，同時也希望在他成長過程中獲得保障。哪種保險產品能兼顧這兩點？",
                 options: [
                     { text: "A. 純壽險，只保障身故", correct: false },
@@ -641,7 +918,7 @@
                     { text: "D. 旅遊平安險，保障旅遊安全", correct: false }
                 ]
             },
-            {
+            { // 第8題 (索引7)
                 id: "q8", question: "您發現自己開始出現失能的風險，擔心未來生活無法自理，需要長期照護。哪種保險能提供這方面的經濟支援？",
                 options: [
                     { text: "A. 醫療險，保障住院醫療費用", correct: false },
@@ -650,7 +927,7 @@
                     { text: "D. 儲蓄險，累積財富", correct: false }
                 ]
             },
-            {
+            { // 第9題 (索引8)
                 id: "q9", question: "您是一位自由工作者，收入不穩定。您希望在收入中斷或突發狀況時，能有一筆應急資金。哪種保險或理財工具最適合您的需求？",
                 options: [
                     { text: "A. 高風險股票投資，追求高報酬", correct: false },
@@ -659,7 +936,7 @@
                     { text: "D. 海外醫療險，保障海外就醫", correct: false }
                 ]
             },
-            {
+            { // 第10題 (索引9)
                 id: "q10", question: "您居住的地區近年來地震頻繁，您擔心房屋受損。除了政府的災害補助，您還能透過什麼方式來轉嫁房屋的潛在損失？",
                 options: [
                     { text: "A. 購買更多黃金，作為實物資產", correct: false },
@@ -667,45 +944,45 @@
                     { text: "C. 住宅地震保險，專門保障地震造成的房屋損失", correct: true, clue: "線索十五：家園安穩，風險可控。" },
                     { text: "D. 人壽保險，保障生命安全", correct: false }
                 ]
-            },
-            {
-                id: "q11", question: "您經常需要出差，搭乘飛機的頻率很高。您會考慮哪種保險來加強飛行期間的保障？",
-                options: [
-                    { text: "A. 汽車保險，保障開車安全", correct: false },
-                    { text: "B. 醫療險，保障一般疾病", correct: false },
-                    { text: "C. 航空意外險或附加航空意外保障的旅平險", correct: true, clue: "線索十六：翱翔天際，安心無憂。" },
-                    { text: "D. 儲蓄險，累積財富", correct: false }
-                ]
-            },
-            {
-                id: "q12", question: "您非常注重健康管理，定期體檢、運動。您希望保險也能鼓勵您的健康生活，並提供相關服務。哪種保險可能符合您的期待？",
-                options: [
-                    { text: "A. 傳統壽險，只保障身故", correct: false },
-                    { text: "B. 意外險，只保障意外", correct: false },
-                    { text: "C. 健康促進型保單，結合運動數據提供保費折扣或健康服務", correct: true, clue: "線索十七：健康生活，雙重回饋。" },
-                    { text: "D. 投資型保單，追求投資收益", correct: false }
-                ]
             }
+        ];
+
+        // 遊戲階段定義 (尋寶圖概念)
+        const gameStages = [
+            { id: "stage1", name: "【啟程之徑】", description: "人生伊始，您將探索基礎知識與潛在風險。", quizCount: 3 }, // 3個問答 (q1, q2, q3)
+            { id: "stage2", name: "【成長之林】", description: "步入社會，您將面對更多元的挑戰與機遇。", quizCount: 2 }, // 2個問答 (q4, q5)
+            // 人生轉折點會在此階段結束後觸發，不作為獨立的 quizCount 階段
+            { id: "stage3", name: "【挑戰之峰】", description: "人生下半場，您將在所選道路上迎接更艱鉅的考驗。", quizCount: 3 }, // 3個問答 (q6, q7, q8)
+            { id: "stage4", name: "【歸途之海】", description: "旅程尾聲，回顧與總結您的生命羅盤。", quizCount: 2 }  // 2個問答 (q9, q10)
         ];
 
 
         // 所有遊戲事件的集合，用於隨機抽取 (不包含 quizQuestions)
-        const allGameEvents = []; // 將在 initializeGame 中填充
+        let allGameEvents = []; // 將在 initializeGame 中填充
+        let playerChallenge = null; // 記錄玩家選擇的人生挑戰
 
         // --- 遊戲狀態變數 ---
         let player = {
-            zodiac: null, // 儲存星座名稱
+            zodiac: null, // 儲存星座名稱 (例如 "牡羊座")
+            zodiacId: null, // 儲存星座 ID (例如 "aries")
             role: null, // 將儲存 initialStates 中的角色物件
             assets: 0,
             health: 0,
             ownedInsurances: new Set(), // 使用Set來存儲已購買的保險ID
             cluesCollected: new Set(), // 使用Set來存儲已收集的線索
-            rebirthUsed: false // 標記是否已使用過「獲得新生」功能
+            rebirthUsed: false, // 標記是否已使用過「獲得新生」功能
+            luckyEscapesCount: 0, // 新增：幸運逃脫次數
+            riskJudgmentScore: 0, // 新增：風險判斷力分數 (答對題數)
+            protectionCompletionScore: 0, // 新增：保障完成度分數 (擁有保險數)
+            zodiacBlessing: null // 新增：儲存玩家的本命星祝福
         };
 
-        let currentRound = 1; // 當前遊戲回合數 (1-indexed)
+        let currentStageIndex = 0; // 當前遊戲階段的索引
         let currentQuizQuestionIndex = 0; // 當前問答題的索引 (0-indexed)
-        const totalGameCycles = quizQuestions.length; // 總遊戲回合數 (每個回合包含一題問答和一個事件)
+        let quizzesCompletedInCurrentStage = 0; // 當前階段已完成的問答數
+
+        let currentRound = 1; // 總回合數 (用於顯示進度)
+        let totalRoundsCalculated = 0; // 總回合數 (所有問答題數)
 
         let justAnsweredQuiz = false; // 標記是否剛回答完問題，接下來應該觸發事件
         let justFinishedTurningPoint = false; // 標記是否剛結束人生轉折點，接下來應該觸發事件
@@ -722,6 +999,7 @@
         const startButton = document.getElementById('startButton');
         const zodiacButtonsContainer = document.getElementById('zodiac-buttons-container');
         const roleDescription = document.getElementById('role-description');
+        const zodiacBlessingDescription = document.getElementById('zodiac-blessing-description'); // 新增祝福描述元素
         const availableInsurancesDiv = document.getElementById('available-insurances');
         const currentAssetsPurchaseSpan = document.getElementById('current-assets-purchase');
         const confirmPurchaseButton = document.getElementById('confirm-purchase');
@@ -732,6 +1010,7 @@
         const displayHealth = document.getElementById('display-health');
         const displayRound = document.getElementById('display-round');
         const totalRoundsSpan = document.getElementById('total-rounds'); // 顯示總回合數
+        const mapStageDisplay = document.getElementById('map-stage-display'); // 地圖階段顯示
         const ownedInsurancesListDiv = document.getElementById('owned-insurances');
         const noInsuranceYet = document.getElementById('no-insurance-yet');
         const cluesCollectedDiv = document.getElementById('clues-collected');
@@ -756,6 +1035,12 @@
         const turningPointInsurancesDiv = document.getElementById('turning-point-insurances');
         const confirmTurningPointPurchaseButton = document.getElementById('confirm-turning-point-purchase');
         const turningPointMessage = document.getElementById('turning-point-message');
+        const lifeChallengeSimulator = document.getElementById('life-challenge-simulator');
+        const chooseStudyButton = document.getElementById('choose-study');
+        const chooseBusinessButton = document.getElementById('choose-business');
+        const chooseMarriageButton = document.getElementById('choose-marriage'); // 修正此行錯誤
+        const challengeOutcomeMessage = document.getElementById('challenge-outcome-message');
+
 
         // 遊戲結束畫面的元素
         const finalOutcomeText = document.getElementById('final-outcome-text');
@@ -768,6 +1053,27 @@
         const recommendedProductsText = document.getElementById('recommended-products-text');
         const restartGameButton = document.getElementById('restartGameButton');
 
+        // 新增排行榜相關元素
+        const finalRiskJudgment = document.getElementById('final-risk-judgment');
+        const finalProtectionCompletion = document.getElementById('final-protection-completion');
+        const finalLuckyEscapes = document.getElementById('final-lucky-escapes');
+        const finalAchievementTitle = document.getElementById('final-achievement-title');
+        const finalZodiacBlessingSummary = document.getElementById('final-zodiac-blessing-summary');
+        const shareResultButton = document.getElementById('shareResultButton');
+        const copyMessage = document.getElementById('copy-message');
+
+        // 星座幸運祝福卡元素
+        const blessingCardText = document.getElementById('blessing-card-text');
+        // const capricornBlessingImage = document.getElementById('capricorn-blessing-image'); // 這個已不再需要，由通用邏輯取代
+        const zodiacBlessingImagesContainer = document.getElementById('zodiac-blessing-images-container'); // 所有星座圖片的容器
+
+
+        // 排行榜元素
+        const leaderboardSection = document.getElementById('leaderboard-section');
+        const leaderboardList = document.getElementById('leaderboard-list');
+        const displayUserId = document.getElementById('display-user-id');
+
+
         // 獲得新生彈窗的元素
         const rebirthModal = document.getElementById('rebirth-modal');
         const activateRebirthButton = document.getElementById('activateRebirth');
@@ -779,7 +1085,7 @@
             startScreen.classList.add('hidden');
             characterSelection.classList.add('hidden');
             insurancePurchase.classList.add('hidden');
-            gamePlay.classList.add('hidden'); // 遊戲主畫面
+            gamePlay.classList.add('hidden'); // 主要遊戲畫面
             turningPointPurchase.classList.add('hidden'); // 人生轉折點
             endGameScreen.classList.add('hidden');
             rebirthModal.classList.remove('show'); // 確保彈窗關閉
@@ -790,25 +1096,32 @@
         function initializeGame() {
             player = {
                 zodiac: null,
+                zodiacId: null, // 重置
                 role: null,
                 assets: 0,
                 health: 0,
-                ownedInsurances: new Set(),
-                cluesCollected: new Set(),
-                rebirthUsed: false
+                ownedInsurances: new Set(), // 使用Set來存儲已購買的保險ID
+                cluesCollected: new Set(), // 使用Set來存儲已收集的線索
+                rebirthUsed: false, // 標記是否已使用過「獲得新生」功能
+                luckyEscapesCount: 0, // 重置
+                riskJudgmentScore: 0, // 重置
+                protectionCompletionScore: 0, // 重置
+                zodiacBlessing: null // 重置
             };
-            currentRound = 1; // 從第1回合開始
+            currentStageIndex = 0; // 從第一階段開始
             currentQuizQuestionIndex = 0; // 從第0題開始
+            quizzesCompletedInCurrentStage = 0;
+            currentRound = 1; // 總回合數從1開始
+            
+            // 計算總回合數 (所有問答題的總和)
+            totalRoundsCalculated = quizQuestions.length;
+
             justAnsweredQuiz = false;
             justFinishedTurningPoint = false;
-            totalRoundsSpan.textContent = totalGameCycles; // 顯示總回合數
+            playerChallenge = null; // 重置人生挑戰選擇
+            totalRoundsSpan.textContent = totalRoundsCalculated; // 顯示總回合數
             updateDisplay();
             showScreen('start-screen');
-            // 重新填充 allGameEvents，確保每次遊戲事件池是完整的
-            allGameEvents.length = 0; // 清空
-            riskEvents.forEach(e => allGameEvents.push({ ...e, type: "risk" }));
-            clueEvents.forEach(e => allGameEvents.push({ ...e, type: "clue" }));
-            lifeEvents.forEach(e => allGameEvents.push({ ...e, type: "life" }));
         }
 
         // 更新狀態顯示
@@ -816,6 +1129,14 @@
             displayAssets.textContent = `$${player.assets.toLocaleString()}`;
             displayHealth.textContent = player.health;
             displayRound.textContent = currentRound; // 顯示當前回合數
+
+            // 更新地圖階段顯示
+            const currentStage = gameStages[currentStageIndex];
+            if (currentStage) {
+                mapStageDisplay.textContent = `當前階段: ${currentStage.name} - ${currentStage.description}`;
+            } else {
+                mapStageDisplay.textContent = `遊戲結束`;
+            }
 
             // 更新已擁有的保險列表
             ownedInsurancesListDiv.innerHTML = '<h3>我的保險契約:</h3>';
@@ -870,14 +1191,17 @@
                 button.addEventListener('click', (event) => {
                     const zodiacId = event.target.dataset.zodiac || event.target.closest('button').dataset.zodiac; // 確保點擊到文字也能獲取
                     const zodiacInfo = zodiacToRoleMap[zodiacId];
-                    
-                    player.zodiac = zodiacInfo.name; // 儲存星座名稱
+
+                    player.zodiac = zodiacInfo.name; // 儲存星座名稱 (例如 "牡羊座")
+                    player.zodiacId = zodiacId; // 儲存星座 ID (例如 "aries")
                     player.role = zodiacInfo.role; // 設定玩家角色物件
                     player.assets = player.role.assets;
                     player.health = player.role.health;
+                    player.zodiacBlessing = zodiacInfo.blessing; // 儲存本命星祝福
 
                     roleDescription.innerHTML = `您選擇了【<span class="final-highlight">${player.zodiac}</span>】。您的生命特質是：「${zodiacInfo.desc}」。這將決定您在遊戲中扮演【<span class="final-highlight">${player.role.name}</span>】的角色。`;
-                    
+                    zodiacBlessingDescription.innerHTML = `您的本命星祝福是：【${player.zodiacBlessing.name}】 - ${player.zodiacBlessing.desc}`;
+
                     // 過渡到下一個畫面
                     setTimeout(() => {
                         showScreen('insurance-purchase');
@@ -968,10 +1292,16 @@
                         quizFeedbackMessage.classList.remove('negative');
                         quizFeedbackMessage.classList.add('positive');
                         player.assets += 5000;
+                        // 應用處女座祝福：答對保險題時獲得更多資產獎勵
+                        if (player.zodiacBlessing && player.zodiacBlessing.type === "quiz_bonus_asset") {
+                            player.assets += player.zodiacBlessing.value;
+                            quizFeedbackMessage.textContent += ` (您的【${player.zodiacBlessing.name}】額外獲得 $${player.zodiacBlessing.value.toLocaleString()})。`;
+                        }
                         player.health = Math.min(100, player.health + 5);
                         if (selectedOption.clue) {
                             player.cluesCollected.add(selectedOption.clue);
                         }
+                        player.riskJudgmentScore++; // 答對題數加1
                     } else {
                         quizFeedbackMessage.textContent = "很可惜，回答錯誤。請繼續努力學習保險知識！";
                         quizFeedbackMessage.classList.remove('positive');
@@ -997,11 +1327,29 @@
 
         // 「確認答案」按鈕的點擊事件 (用於從問答跳轉到事件或轉折點)
         nextQuizQuestionButton.addEventListener('click', () => {
-            if (currentQuizQuestionIndex === 5) { // 如果是第6題 (索引5)
+            quizFeedbackMessage.classList.add('hidden');
+            nextQuizQuestionButton.classList.add('hidden');
+            // Re-enable quiz option buttons for next quiz (if any)
+            document.querySelectorAll('.quiz-option-button').forEach(btn => {
+                btn.disabled = false;
+                btn.classList.remove('correct', 'incorrect');
+            });
+
+            // 人生轉折點在第5題和第6題之間 (索引4之後)
+            if (currentQuizQuestionIndex === 4) { // 如果是第5題 (索引4)
                 showScreen('turning-point-purchase');
                 renderTurningPointPurchaseOptions();
+                lifeChallengeSimulator.classList.remove('hidden'); // 顯示人生挑戰模擬器
+                // 啟用挑戰按鈕
+                chooseStudyButton.disabled = false;
+                chooseBusinessButton.disabled = false;
+                chooseMarriageButton.disabled = false;
+                challengeOutcomeMessage.classList.add('hidden'); // 隱藏結果訊息
+                confirmTurningPointPurchaseButton.disabled = true; // 預設禁用加購確認按鈕
+                // 這裡不遞增 currentQuizQuestionIndex 或呼叫 startNextStage，遊戲流程暫停
             } else {
-                currentQuizQuestionIndex++; // 進入下一題問答的索引
+                justAnsweredQuiz = true; // 標記已回答問題，下一步應觸發事件
+                currentQuizQuestionIndex++; // 遞增到下一題的索引
                 startNextStage(); // 繼續遊戲流程 (觸發事件)
             }
         });
@@ -1038,7 +1386,7 @@
                         turningPointAssetsSpan.textContent = `$${player.assets.toLocaleString()}`;
                         // 重新檢查其他保險是否可購買
                         document.querySelectorAll('.buy-turning-point-btn').forEach(btn => {
-                            if (player.assets < parseInt(btn.dataset.cost) || player.ownedInsurances.has(btn.dataset.id)) {
+                            if (player.assets < parseInt(btn.dataset.cost)) {
                                 btn.disabled = true;
                             }
                         });
@@ -1052,11 +1400,55 @@
             });
         }
 
+        // 人生挑戰選擇事件
+        [chooseStudyButton, chooseBusinessButton, chooseMarriageButton].forEach(button => {
+            button.addEventListener('click', (event) => {
+                playerChallenge = event.target.dataset.challenge; // 儲存玩家選擇的挑戰
+                let message = "";
+                // 禁用所有挑戰按鈕
+                chooseStudyButton.disabled = true;
+                chooseBusinessButton.disabled = true;
+                chooseMarriageButton.disabled = true;
+
+                switch (playerChallenge) {
+                    case "study":
+                        message = "您選擇了【留學深造】！這將為您的知識和視野帶來提升，但也可能伴隨學業與財務壓力。";
+                        break;
+                    case "business":
+                        message = "您選擇了【自主創業】！這條路充滿機遇，但也可能面臨資金與市場的巨大風險。";
+                        break;
+                    case "marriage":
+                        message = "您選擇了【步入婚姻】！這意味著新的責任與家庭的建立，但也可能帶來預期外的家庭開銷。";
+                        break;
+                }
+                challengeOutcomeMessage.textContent = message;
+                challengeOutcomeMessage.classList.remove('hidden', 'negative');
+                challengeOutcomeMessage.classList.add('positive');
+
+                // 確認加購按鈕在選擇挑戰後即可繼續
+                confirmTurningPointPurchaseButton.disabled = false;
+            });
+        });
+
+
         // 確認人生轉折點加購，繼續遊戲流程 (觸發事件)
         confirmTurningPointPurchaseButton.addEventListener('click', () => {
-            currentQuizQuestionIndex++; // 進入第7題問答的索引 (索引6)
+            // 在玩家選擇挑戰後，才允許繼續
+            if (!playerChallenge) {
+                challengeOutcomeMessage.textContent = "請先選擇您的人生挑戰！";
+                challengeOutcomeMessage.classList.remove('hidden', 'positive');
+                challengeOutcomeMessage.classList.add('negative');
+                return;
+            }
+
+            // 轉折點結束後，手動推進到下一個階段和測驗索引
+            currentStageIndex = 2; // 移動到 gameStages 中的「挑戰之峰」階段 (索引 2)
+            quizzesCompletedInCurrentStage = 0; // 重置當前階段問答計數
+            currentQuizQuestionIndex = 5; // 設定為第 6 題的索引 (從 0 開始)
+            
             justFinishedTurningPoint = true; // 標記剛結束轉折點，下一步應觸發事件
-            startNextStage(); // 繼續遊戲流程
+            lifeChallengeSimulator.classList.add('hidden'); // 隱藏人生挑戰模擬器
+            startNextStage(); // 繼續遊戲流程 (觸發事件)
         });
 
 
@@ -1066,17 +1458,72 @@
             quizSection.classList.add('hidden');
             eventSection.classList.remove('hidden');
 
-            // 過濾掉不適合當前角色的風險事件
-            const availableEvents = allGameEvents.filter(event => {
-                // 如果事件有角色限制，且當前玩家角色不在限制列表中，則過濾掉
-                if (event.roles && player.role && !event.roles.includes(player.role.id)) {
-                    return false;
+            // 應用本命星祝福：每回合資產/健康增益
+            if (player.zodiacBlessing) {
+                if (player.zodiacBlessing.type === "asset_per_round") {
+                    player.assets += player.zodiacBlessing.value;
+                    // 如果 outcomeMessage 已有內容，則追加
+                    if (outcomeMessage.textContent) {
+                        outcomeMessage.textContent += ` 您的【${player.zodiacBlessing.name}】祝福生效，額外獲得 $${player.zodiacBlessing.value.toLocaleString()} 資產！`;
+                    } else {
+                        outcomeMessage.textContent = `您的【${player.zodiacBlessing.name}】祝福生效，額外獲得 $${player.zodiacBlessing.value.toLocaleString()} 資產！`;
+                    }
+                    outcomeMessage.className = `message result-message positive`;
+                    outcomeMessage.classList.remove('hidden');
+                } else if (player.zodiacBlessing.type === "health_per_round") {
+                    player.health = Math.min(100, player.health + player.zodiacBlessing.value);
+                     // 如果 outcomeMessage 已有內容，則追加
+                    if (outcomeMessage.textContent) {
+                        outcomeMessage.textContent += ` 您的【${player.zodiacBlessing.name}】祝福生效，額外恢復 ${player.zodiacBlessing.value} 點健康！`;
+                    } else {
+                        outcomeMessage.textContent = `您的【${player.zodiacBlessing.name}】祝福生效，額外恢復 ${player.zodiacBlessing.value} 點健康！`;
+                    }
+                    outcomeMessage.className = `message result-message positive`;
+                    outcomeMessage.classList.remove('hidden');
                 }
-                return true;
+            }
+
+
+            // 根據玩家挑戰和本命星祝福調整事件機率
+            let weightedEvents = [];
+            const normalWeight = 1; // 預設權重
+            const highWeight = 3; // 高權重，增加出現機率
+            const clueBoostWeight = player.zodiacBlessing && player.zodiacBlessing.type === "clue_chance" ? (1 + player.zodiacBlessing.value) : 1;
+
+
+            // 重新填充 allGameEvents，確保每次遊戲事件池是完整的
+            allGameEvents = [];
+            
+            riskEvents.forEach(e => {
+                let weight = normalWeight;
+                if (e.only_if_challenge && e.only_if_challenge === playerChallenge) {
+                    weight = highWeight; // 如果事件與玩家選擇的挑戰相關，權重增加
+                }
+                for (let i = 0; i < weight; i++) {
+                    allGameEvents.push({ ...e, type: "risk" });
+                }
             });
 
-            const eventIndex = Math.floor(Math.random() * availableEvents.length);
-            const event = availableEvents[eventIndex];
+            clueEvents.forEach(e => {
+                let weight = normalWeight * clueBoostWeight; // 應用線索祝福
+                for (let i = 0; i < weight; i++) {
+                    allGameEvents.push({ ...e, type: "clue" });
+                }
+            });
+            
+            lifeEvents.forEach(e => {
+                let weight = normalWeight;
+                if (e.only_if_challenge && e.only_if_challenge === playerChallenge) {
+                    weight = highWeight; // 如果事件與玩家選擇的挑戰相關，權重增加
+                }
+                for (let i = 0; i < weight; i++) {
+                    allGameEvents.push({ ...e, type: "life" });
+                }
+            });
+
+
+            const eventIndex = Math.floor(Math.random() * allGameEvents.length);
+            const event = allGameEvents[eventIndex];
 
             eventDescription.textContent = `【${event.name}】 - ${event.desc}`;
 
@@ -1094,13 +1541,26 @@
                 if (hasRelevantInsurance) {
                     outcome = event.with_insurance;
                     msgClass = 'result-message positive';
+                    player.luckyEscapesCount++; // 幸運逃脫次數加1
                 } else {
                     outcome = event.no_insurance;
                     msgClass = 'result-message negative';
                 }
 
-                player.assets = Math.max(0, player.assets + outcome.assets); // 資產不低於0
-                player.health = Math.max(0, Math.min(100, player.health + outcome.health)); // 健康在0-100之間
+                let assetChange = outcome.assets;
+                let healthChange = outcome.health;
+
+                // 應用天蠍座祝福：風險損失減輕
+                if (player.zodiacBlessing && player.zodiacBlessing.type === "risk_mitigation_percent") {
+                    assetChange = Math.round(assetChange * (1 - player.zodiacBlessing.value)); // 減少損失
+                    healthChange = Math.round(healthChange * (1 - player.zodiacBlessing.value));
+                    if (assetChange < 0) assetChange = Math.min(0, assetChange); // 確保是損失減少
+                    if (healthChange < 0) healthChange = Math.min(0, healthChange); // 確保是損失減少
+                    outcomeMessage.textContent += ` (您的【${player.zodiacBlessing.name}】祝福減輕了部分損失)。`;
+                }
+
+                player.assets = Math.max(0, player.assets + assetChange); // 資產不低於0
+                player.health = Math.max(0, Math.min(100, player.health + healthChange)); // 健康在0-100之間
 
                 outcomeMessage.textContent = outcome.msg;
                 outcomeMessage.className = `message ${msgClass}`;
@@ -1159,7 +1619,17 @@
 
         // 「進入下一回合」按鈕的點擊事件 (用於從事件跳轉到下一回合的問答)
         nextEventButton.addEventListener('click', () => {
-            currentRound++; // 進入下一回合
+            currentRound++; // 總回合數增加
+            quizzesCompletedInCurrentStage++; // 當前階段已完成的問答數增加
+
+            const currentStage = gameStages[currentStageIndex];
+
+            // 檢查當前階段的問答是否已完成
+            if (quizzesCompletedInCurrentStage >= currentStage.quizCount) {
+                currentStageIndex++; // 移動到下一個階段
+                quizzesCompletedInCurrentStage = 0; // 重置當前階段問答計數
+            }
+            // currentQuizQuestionIndex 在 nextQuizQuestionButton 中或 confirmTurningPointPurchaseButton 中已處理
             startNextStage(); // 繼續遊戲流程 (問答或結束)
         });
 
@@ -1167,8 +1637,8 @@
         function startNextStage() {
             updateDisplay();
 
-            // 檢查遊戲是否結束
-            if (currentRound > totalGameCycles) {
+            // 檢查遊戲是否結束 (所有階段都已完成)
+            if (currentStageIndex >= gameStages.length) {
                 endGame();
                 return;
             }
@@ -1187,13 +1657,13 @@
                 // 如果剛回答完問題或剛結束轉折點，則觸發隨機事件
                 justAnsweredQuiz = false; // 重置標記
                 justFinishedTurningPoint = false; // 重置標記
-                showScreen('game-play'); // 確保在遊戲主畫面
+                showScreen('game-play');
                 triggerRandomEvent();
             } else {
                 // 否則，顯示問答環節
                 quizSection.classList.remove('hidden');
                 eventSection.classList.add('hidden');
-                showScreen('game-play'); // 確保在遊戲主畫面
+                showScreen('game-play');
                 renderQuizQuestion();
             }
         }
@@ -1223,11 +1693,20 @@
             let baseScore = financialRatio + healthRatio;
 
             // 擁有保險的額外加分 (鼓勵投保)
+            player.protectionCompletionScore = player.ownedInsurances.size; // 更新保障完成度分數
             let insuranceBonus = player.ownedInsurances.size * 0.1; // 每多一份保險加0.1分
+            // 應用摩羯座祝福：保障完成度分數更高
+            if (player.zodiacBlessing && player.zodiacBlessing.type === "protection_score_boost") {
+                insuranceBonus += player.zodiacBlessing.value * player.ownedInsurances.size;
+            }
             baseScore += insuranceBonus;
 
+            // 應用水瓶座祝福：幸運逃脫次數加成
+            if (player.zodiacBlessing && player.zodiacBlessing.type === "lucky_escape_boost_count") {
+                player.luckyEscapesCount += player.zodiacBlessing.value;
+            }
+
             // 將分數轉換為百分比 (模擬擊敗其他玩家)
-            // 假設分數越高，擊敗的百分比越高
             // 這裡使用一個非線性轉換，讓值映射到0-100
             let percentage = Math.round(Math.tanh(baseScore / 1.5) * 100); // tanh函數將值映射到-1到1，再調整到0-100
             
@@ -1267,10 +1746,130 @@
             } else if (roleId === "empathic_connector") {
                  recommendations.push("特別推薦：醫療險、防癌險。");
             }
+            // 根據人生挑戰進行微調
+            if (playerChallenge === "study") {
+                recommendations.push("因留學挑戰，更建議：海外突發疾病醫療險、儲蓄險（備用金）。");
+            } else if (playerChallenge === "business") {
+                recommendations.push("因創業挑戰，更建議：高額意外險、儲蓄險（創業備用金）。");
+            } else if (playerChallenge === "marriage") {
+                recommendations.push("因婚姻挑戰，更建議：家庭保障型壽險、醫療險、子女教育金險。");
+            }
+
 
             return recommendations.join("<br>");
         }
 
+        // 獲取成就稱號
+        function getAchievementTitle() {
+            let title = "平凡的旅者";
+            const totalPossibleScore = quizQuestions.length; // 總題數
+            const quizAccuracy = player.riskJudgmentScore / totalPossibleScore;
+            const insuranceCoverage = player.ownedInsurances.size / availableInsurances.length;
+
+            if (quizAccuracy >= 0.9 && insuranceCoverage >= 0.7 && player.luckyEscapesCount >= 3) {
+                title = "【生命羅盤大師】";
+            } else if (quizAccuracy >= 0.7 && insuranceCoverage >= 0.5 && player.luckyEscapesCount >= 2) {
+                title = "【智慧守護者】";
+            } else if (player.luckyEscapesCount >= 1) {
+                title = "【幸運的探索者】";
+            } else if (player.riskJudgmentScore >= totalPossibleScore * 0.6) {
+                 title = "【知識領航員】";
+            } else if (player.ownedInsurances.size >= availableInsurances.length * 0.5) {
+                title = "【保障先行者】";
+            }
+
+            // 結合星座特質
+            if (player.zodiac === "水瓶座" && title === "幸運的探索者") {
+                title = "【最聰明的水瓶座】"; // 範例：水瓶座的幸運逃脫加成
+            } else if (player.zodiac === "射手座" && player.assets < initialStates[player.role.id].assets * 0.5) {
+                title = "【最倒楣的射手座】"; // 範例：射手座如果資產很低
+            }
+
+            return title;
+        }
+
+        // 保存分數到排行榜
+        async function saveScoreToLeaderboard() {
+            if (!db || !userId) {
+                console.error("Firestore not initialized or user not authenticated. Cannot save score.");
+                return;
+            }
+
+            try {
+                const finalScore = calculateFinalScoreAndPercentage(); // 使用百分比作為分數
+                const achievementTitle = getAchievementTitle();
+                const zodiac = player.zodiac;
+                const blessingName = player.zodiacBlessing ? player.zodiacBlessing.name : "無";
+
+                const leaderboardCollectionRef = collection(db, `artifacts/${appId}/public/data/leaderboard`);
+                await addDoc(leaderboardCollectionRef, {
+                    userId: userId,
+                    zodiac: zodiac,
+                    achievementTitle: achievementTitle,
+                    finalScore: finalScore,
+                    blessingName: blessingName,
+                    timestamp: new Date()
+                });
+                console.log("Score saved to leaderboard!");
+            } catch (e) {
+                console.error("Error adding document to leaderboard: ", e);
+            }
+        }
+
+        // 載入並顯示排行榜
+        async function loadLeaderboard() {
+            if (!db) {
+                console.error("Firestore not initialized. Cannot load leaderboard.");
+                return;
+            }
+
+            leaderboardList.innerHTML = '<li>載入排行榜中...</li>';
+            displayUserId.textContent = userId; // 顯示當前使用者的 ID
+
+            try {
+                const leaderboardCollectionRef = collection(db, `artifacts/${appId}/public/data/leaderboard`);
+                const querySnapshot = await getDocs(leaderboardCollectionRef);
+                
+                let scores = [];
+                querySnapshot.forEach((doc) => {
+                    scores.push(doc.data());
+                });
+
+                // 依分數降序排序 (客戶端排序，避免 Firestore 索引問題)
+                scores.sort((a, b) => b.finalScore - a.finalScore); 
+
+                leaderboardList.innerHTML = ''; // 清除載入訊息
+
+                // 顯示前 10 名或所有分數
+                const topScores = scores.slice(0, 10);
+                if (topScores.length === 0) {
+                    leaderboardList.innerHTML = '<li>目前無排行榜資料。</li>';
+                } else {
+                    topScores.forEach((score, index) => {
+                        const li = document.createElement('li');
+                        li.style.cssText = `
+                            background-color: rgba(52, 73, 94, 0.5);
+                            padding: 8px 15px;
+                            margin-bottom: 5px;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 1em;
+                            ${score.userId === userId ? 'border: 2px solid #f1c40f; box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);' : ''} /* 突出顯示當前使用者 */
+                        `;
+                        li.innerHTML = `
+                            <span>${index + 1}. <strong>${score.zodiac}</strong> (${score.achievementTitle})</span>
+                            <span>分數: <span style="color: #34D399; font-weight: bold;">${score.finalScore}%</span></span>
+                        `;
+                        leaderboardList.appendChild(li);
+                    });
+                }
+            } catch (e) {
+                console.error("Error loading leaderboard: ", e);
+                leaderboardList.innerHTML = '<li>載入排行榜失敗。</li>';
+            }
+        }
 
         // 遊戲結束
         function endGame(reason = "normal") {
@@ -1324,6 +1923,82 @@
 
             // 國泰人壽推薦產品和標語
             recommendedProductsText.innerHTML = getRecommendedProducts();
+
+            // 更新排行榜數據
+            finalRiskJudgment.querySelector('strong').textContent = `${player.riskJudgmentScore} / ${quizQuestions.length}`;
+            finalProtectionCompletion.querySelector('strong').textContent = `${player.ownedInsurances.size} / ${availableInsurances.length} 項`;
+            finalLuckyEscapes.querySelector('strong').textContent = `${player.luckyEscapesCount} 次`;
+            finalAchievementTitle.querySelector('strong').textContent = getAchievementTitle();
+            finalZodiacBlessingSummary.querySelector('strong').textContent = player.zodiacBlessing ? `${player.zodiacBlessing.name} (${player.zodiacBlessing.desc})` : "無";
+
+            // 顯示星座幸運祝福卡和對應圖片
+            // 隱藏所有星座圖片
+            document.querySelectorAll('.zodiac-image-container').forEach(img => img.classList.add('hidden'));
+
+            if (player.zodiacBlessing) {
+                blessingCardText.innerHTML = `您的本命星【<span class="blessing-name-highlight">${player.zodiacBlessing.name}</span>】持續守護著您！<br>${player.zodiacBlessing.desc}`;
+                
+                // 根據 player.zodiacId 找到對應的圖片元素並顯示
+                const zodiacImageElement = document.getElementById(`${player.zodiacId}-image`);
+                const zodiacInfo = zodiacToRoleMap[player.zodiacId];
+
+                if (zodiacImageElement && zodiacInfo && zodiacInfo.imageUrl) {
+                    zodiacImageElement.src = zodiacInfo.imageUrl; // 設定圖片來源
+                    zodiacImageElement.classList.remove('hidden'); // 顯示對應圖片
+                } else {
+                    console.warn(`無法找到或載入 ${player.zodiac} 的圖片。`);
+                }
+            } else {
+                blessingCardText.textContent = "您沒有獲得特殊的本命星祝福。";
+            }
+            
+            // 保存分數並載入排行榜
+            saveScoreToLeaderboard();
+            loadLeaderboard();
+        }
+
+        // 社群分享功能
+        shareResultButton.addEventListener('click', () => {
+            const achievementTitle = getAchievementTitle();
+            const finalScore = calculateFinalScoreAndPercentage();
+            const blessingSummary = player.zodiacBlessing ? `您的本命星祝福：${player.zodiacBlessing.name} - ${player.zodiacBlessing.desc}` : "無本命星祝福。";
+
+            const shareText = `我在國泰人壽【生命羅盤：星軌守護】中，完成了【${player.zodiac}】的人生模擬！\n` +
+                               `我的最終成就稱號：${achievementTitle}\n` +
+                               `綜合分數：${finalScore}%\n` +
+                               `風險判斷力指數：${player.riskJudgmentScore}/${quizQuestions.length}\n` +
+                               `保障完成度：${player.ownedInsurances.size}/${availableInsurances.length} 項\n` +
+                               `幸運逃脫次數：${player.luckyEscapesCount} 次\n` +
+                               `${blessingSummary}\n\n` +
+                               `快來挑戰你的人生羅盤吧！#國泰人壽 #生命羅盤 #安心守護`;
+            
+            // 直接呼叫 fallback 函數，因為 Clipboard API 在某些環境下可能被阻擋
+            fallbackCopyTextToClipboard(shareText);
+        });
+
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            // 避免在頁面上顯示滾動條
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
+            textArea.style.top = "-999999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                const successful = document.execCommand('copy');
+                const msg = successful ? '成功複製到剪貼簿！' : '無法自動複製，請手動複製。';
+                copyMessage.textContent = msg;
+                copyMessage.classList.remove('hidden');
+                setTimeout(() => copyMessage.classList.add('hidden'), 3000);
+            } catch (err) {
+                console.error('Fallback: 無法複製文字', err);
+                copyMessage.textContent = '無法自動複製，請手動複製。';
+                copyMessage.classList.remove('hidden');
+                setTimeout(() => copyMessage.classList.add('hidden'), 3000);
+            }
+            document.body.removeChild(textArea);
         }
 
         // 重新開始遊戲
@@ -1332,10 +2007,14 @@
             showScreen('character-selection');
             renderZodiacSelection(); // 渲染星座選擇按鈕
             roleDescription.textContent = "請點擊您的星座按鈕了解更多。"; // Reset desc
+            zodiacBlessingDescription.textContent = ""; // Reset blessing desc
         });
 
-        // 初始載入
-        initializeGame();
+        // 初始載入：先設定 Firebase，然後初始化遊戲
+        window.onload = async () => {
+            await setupFirebase();
+            initializeGame();
+        };
     </script>
 </body>
 </html>
